@@ -1,0 +1,47 @@
+- id: cave_entrance
+  short_desc: "You are inside the entrance to a cave"
+  long_desc: |
+    You are standing in the mouth of a large cave.
+    Sunlight shines in through the opening to the south.
+    To the north a rough tunnel leads into the darkness.
+  look_details:
+    - keywords: ["north", "tunnel", "cave", "inward"]
+      desc: "The cave doesn't seem manmade, but there seems to be faint path worn into the tunnel"
+    - keywords: ["south", "exit", "opening", "entrance", "mouth"]
+      desc: "The darkness of the cave causes you to squint when you look at the sunlit meadow outside the cave entrance"
+  paths:
+    - north: tunnel_0
+      desc: "You clamber over boulders and around tight corners deeper into the cave"
+    - south: meadow
+
+- id: tunnel_0
+  short_desc: "You are in a winding stone tunnel"
+  long_desc: |
+    "You are in a winding stone tunnel that runs north/south"
+  look_details:
+    - keywords: ["north", "south"]
+      desc: "The twisting passage obscures your view. "
+  paths:
+    - south: cave_entrance
+
+- id: meadow
+  short_desc: "You are in a meadow"
+  long_desc: |
+    You are in a quiet meadow surrounded on three sides by green forest.
+    To the north is a rocky hillside covered in moss.
+    A rugged opening can be seen at the base of the hill.
+  look_details:
+    - keywords:
+        [
+          "north",
+          "tunnel",
+          "cave",
+          "cavern",
+          "inward",
+          "opening",
+          "entrance",
+          "hole",
+        ]
+      desc: "The hole appears to be the entrance to a cave"
+  paths:
+    - north: cave_entrance
