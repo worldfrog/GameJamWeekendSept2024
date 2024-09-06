@@ -10,9 +10,11 @@
     - keywords: ["south", "exit", "opening", "entrance", "mouth"]
       desc: "The darkness of the cave causes you to squint when you look at the sunlit meadow outside the cave entrance"
   paths:
-    - north: tunnel_0
+    - room: tunnel_0
+      keywords: ["north", "tunnel", "cave", "inward"]
       desc: "You clamber over boulders and around tight corners deeper into the cave"
-    - south: meadow
+    - room: meadow
+      keywords: ["south", "exit", "opening", "entrance", "mouth"]
 
 - id: tunnel_0
   short_desc: "You are in a winding stone tunnel"
@@ -22,7 +24,8 @@
     - keywords: ["north", "south"]
       desc: "The twisting passage obscures your view. "
   paths:
-    - south: cave_entrance
+    - room: cave_entrance
+      keywords: ["south", "exit", "entrance"]
 
 - id: meadow
   short_desc: "You are in a meadow"
@@ -44,4 +47,5 @@
         ]
       desc: "The hole appears to be the entrance to a cave"
   paths:
-    - north: cave_entrance
+    - room: cave_entrance
+      keywords: ["north", "tunnel", "cave", "opening", "entrance"]
