@@ -1,0 +1,22 @@
+- [ ] Code
+	- [ ] Command parser
+		- [ ] Tokenize input string
+		- [ ] Identify verb (should only be one verb or none per command)
+		- [ ] Identify nouns (No pronouns! Tell player to be specific)
+		- [ ] Identify prepositions (important for targetting verbs to nouns)
+		- [ ] Identify adjectives (usually ignorable, but may be needed for disambiguation)
+		- [ ] Actually execute the command and update game state
+	- [ ] Game state & save functionality
+	- [ ] Item & inventory system
+	- [ ] NPC system
+	- [ ] Event system (story and possibly random events too)
+- [ ] Story
+	- [ ] Plot outline
+	- [ ] Character descriptions
+	- [ ] World map
+- [ ] Content
+	- [ ] Story text
+	- [ ] Rooms
+	- [ ] Items
+	- [ ] NPCs
+	- [ ] Events

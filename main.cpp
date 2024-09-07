@@ -1,11 +1,16 @@
 #include <iostream>
 #include <string.h>
+#include <vector>
 #include <yaml-cpp/yaml.h>
 #include "alpha2int.h"
+
+typedef std::vector<std::string> string_vector
 
 int getRoomIndex(YAML::Node &rooms, std::string roomID);
 void describeRoom(YAML::Node &rooms, std::string roomID, bool full);
 void prompt();
+string_vector splitWords(std::string String);
+
 
 int main(int argc, char** argv) {
 
@@ -53,4 +58,11 @@ void prompt() {
     std::cout << "> ";
     std::cin >> inputString;
     
+}
+
+string_vector splitWords(std::string String) {
+    string_vector Words;
+    // gotta go now XD
+    // Will implement later!
+    return Words;
 }

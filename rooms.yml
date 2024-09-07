@@ -35,17 +35,9 @@
     A rugged opening can be seen at the base of the hill.
   look_details:
     - keywords:
-        [
-          "north",
-          "tunnel",
-          "cave",
-          "cavern",
-          "inward",
-          "opening",
-          "entrance",
-          "hole",
-        ]
+        ["north", "tunnel", "cave", "cavern", "inward", "opening", "entrance", "hole"]
       desc: "The hole appears to be the entrance to a cave"
   paths:
     - room: cave_entrance
-      keywords: ["north", "tunnel", "cave", "opening", "entrance"]
+      keywords:
+        ["north", "tunnel", "cave", "cavern", "inward", "opening", "entrance", "hole"]
